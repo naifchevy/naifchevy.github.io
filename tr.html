@@ -134,9 +134,51 @@
                 font-size: 20px;
             }
         }
+        @media (max-width:485px){
+            nav li a{
+                font-size: 10px;
+            }
+        }
+        
         .project{
             background-color: black;
             color: white;
+        }
+        .more_details{
+            color: rgb(0, 47, 255);
+        }
+        .more_details:hover{
+            color: blueviolet;
+        }
+        .project-card{
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            color: black;
+            min-height: 14em;
+            width: 23em;
+            overflow: hidden;
+            margin: 20px;
+            
+        }
+        .project-card:hover{
+            transform: scale(1.1);
+            transition:  0.7s ease;
+        }
+        .project-image img{
+            width: 100%;
+        }
+        .project-card:hover .project-image{
+            opacity: 0.9;
+        }
+        .project-card p{
+            font-size: 0.8em ;
+        }
+        .project-title{
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -258,20 +300,39 @@
             </div>
         </section>
         <section id="project" class="project">
-            <h1 class="text-center text-primary">Project</h1>
+            <h1 class="text-center text-primary" style="margin-bottom: 20px;">Project</h1>
             <div class="content">
                 <div class="project-card">
                     <div class="project-image">
-
+                        <img src="http://rogan.rocks/wp-content/uploads/2016/02/html-css-js-1024x768.png" alt="">
                     </div>
                     <div class="project-info">
-                        
+                        <p>What is html and css and javascript</p>
+                        <strong class="project-title">
+                            <span>Web Lan</span>
+                            <a href="https://github.com/naifchevy/naifchevy/blob/main/html_laguge.html" class="more_details">More details</a>
+                        </strong>
                     </div>
                 </div>
                 <div class="project-card">
-                    
+                    <div class="project-image">
+                        <img src="https://image.slidesharecdn.com/energytransferinecosystems-120914163642-phpapp02/95/energy-transfer-in-ecosystems-1-728.jpg?cb=1347640820" alt="">
+                    </div>
+                    <div class="project-info">
+                        <p>Energy is transferred between organisms in food...</p>
+                        <strong class="project-title">
+                            <span>Energy Transfer</span>
+                            <a href="https://github.com/naifchevy/naifchevy/blob/main/scr.html" class="more_details">More details</a>
+                        </strong>
+                    </div>
                 </div>
+                <!-- <div class="project-card">
+
+                </div> -->
             </div>
+        </section>
+        <section id="contact">
+            <h1 class="text-center text-primary">Contact</h1>
         </section>
 </body>
 
